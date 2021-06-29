@@ -1,0 +1,41 @@
+@import "mixin";
+@import "colores";
+
+
+%FlexBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+
+.body-b {
+    
+    background-color: $body-color;
+}
+
+
+.header-bebidas {
+
+        @extend %FlexBox;
+        color: black;
+         background-color: #b98464;
+    }
+
+
+
+        .footer-bebidas {
+      
+            
+            .redes {
+                color: black;
+                text-decoration: none;
+            }
+        
+            @include footer (white)
+            
+        }
+    
+        

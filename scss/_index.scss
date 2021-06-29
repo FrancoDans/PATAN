@@ -1,0 +1,46 @@
+@import "mixin";
+@import "colores";
+
+
+$bg-color: gray;
+
+
+%FlexBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.body-i {
+    background-color: $body-color;
+}
+.header-index {
+    @extend %FlexBox;
+       background-color: #b98464;
+       color:black;
+    
+    
+}
+
+.section-i2{
+    background-color: $bg-color;
+    text-align: center;
+}
+
+.h3-index {
+    text-align: center;
+  
+    background-color:$bg-color;
+    color: bg-color;
+}
+    .footer-index {
+        @include footer (black);
+        .redes{
+            color: $bg-color;
+            text-decoration: none;
+    
+          
+            }
+        }
